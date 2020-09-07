@@ -1,0 +1,46 @@
+h2 {
+    background-color:darkgrey;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: black; 
+    margin-bottom: 2%;
+    margin-left: 25%;
+    margin-top: 3%;
+    width: 50%;
+}
+
+p {
+    color: wheat;
+}
+
+.container {
+    background-color: teal;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    opacity: 0.9;
+}
+
+a {
+    cursor: pointer;
+    color:white;
+    font-style: italic;
+}
+
+table {
+    margin-left: 33%;
+    border: 2px white solid;
+    border-radius: 3px;
+    background-color:rgb(109, 161, 30);
+    opacity: 0.8;
+}
+
+tr {
+    border: white 1px solid;
+    padding-right: 10%;
+}
+
+td {
+  
+    order:1px solid white;
+    padding-right: 10%;
+}

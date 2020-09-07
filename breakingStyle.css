@@ -1,0 +1,15 @@
+li {
+    cursor:pointer;
+}
+div {
+    background-color: thistle;
+}
+
+.formularios {
+    margin-top: 3%;
+    text-align: center;
+}
+
+.btn-crsr {
+    cursor: pointer;
+}

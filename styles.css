@@ -1,0 +1,39 @@
+a {
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(126, 150, 126);
+    
+    border: cornsilk 1px solid;
+    border-radius: 8px;
+    color: whitesmoke;
+}
+
+h2 {
+    margin-left: 25%;
+    text-align: center;
+    color: honeydew;
+    border: cornsilk 1px solid;
+    border-radius: 8px;
+    background-color: indigo;
+    opacity: 0.9;
+    width: 50%;
+}
+
+.recomendadas {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    align-content: flex-end;
+    justify-content: space-around; 
+}
+
+.img-rec {
+    width: 200px;
+    height: 300px;
+    border: ivory 1px solid;
+    border-radius: 4px;
+    cursor: pointer;
+}
