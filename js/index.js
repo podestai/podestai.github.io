@@ -11,17 +11,15 @@ let intentos =  document.getElementById("intentos");
 let spanContador = document.getElementById("count");
 let director = document.getElementById("director");
 let ayuda = document.getElementById("ayuda");
-let contador = 5;
-/*
-tarantino.addEventListener("click", () => {
-    
-});
-
-coppola.addEventListener("click", () => {
-
-});
-
-*/
+let estreno = document.getElementById("preguntaEstreno");
+let conteoEstreno = document.getElementById("anioEstreno");
+let cantidadEstreno = document.getElementById("cantidadEstreno");
+let respuesta = document.getElementById("respuesta");
+let input = document.getElementById("estreno");
+let triviaYear = document.getElementById("triviaYear");
+let wrongYearAlert = document.getElementById("wrongYear");
+let correctYearAlert = document.getElementById("correctYear");
+let contador = 3;
 
 function stop() {
 
@@ -33,7 +31,6 @@ function stop() {
     intentos.className = "alert alert-danger";
     intentos.innerHTML = "Se acabaron los intentos. Respuesta correcta: Vince Gilligan"; 
     ayuda.style.display = "none";
-    
 }
 
 function help() {
@@ -103,7 +100,6 @@ spielberg.addEventListener("click", () => {
 
 });
 
-
 gilligan.addEventListener("click", () => {
 
     tarantino.style.display = "none";
@@ -117,5 +113,42 @@ gilligan.addEventListener("click", () => {
     adivinanza.className = "alert alert-success" ;
     adivinanza.appendChild(alerta);
     
-
 });
+
+
+let intentosEstreno = 3;
+
+function correctYear(year) {
+    
+    intentosEstreno--;
+    conteoEstreno.style.display = "block";
+    cantidadEstreno.innerHTML = intentosEstreno;
+    
+    if(year == 2008) {
+        estreno.style.display = "none";
+        correctYearAlert.className = "alert alert-success";
+        correctYearAlert.style.display = "block";
+        
+    } else {
+        console.log("equivocado");
+    }
+    
+    if(intentosEstreno === 0) {
+
+        wrongYearAlert.className = "alert alert-danger";
+        wrongYearAlert.style.display = "block";  
+        estreno.style.display = "none";
+        cantidadEstreno.innerHTML = "Breaking Bad se estrenó en el año 2008";
+    }
+}
+
+
+estreno.addEventListener("keyup", (event) => {
+
+    let year = input.value;
+
+    if(event.keyCode === 13) {
+        correctYear(year);
+    }
+});
+

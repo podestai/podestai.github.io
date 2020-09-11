@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="/breakingStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap" rel="stylesheet">
     <title>Breaking Bad</title>
 </head>
 <body style="background-image: url(/images/breakingBad/background.jpg);">
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+    <nav class="w-100 navbar navbar-expand-sm bg-dark justify-content-center navbar-expand-lg">
         <ul class="navbar-nav bg-success">
             <li class="p-1 m-3 p-1 nav-link">Inicio</li>
             <li class=" w-25 m-3 p-1 nav-link">Fotos</li>
@@ -50,6 +51,26 @@
             </div>
         </div>
     </section>
+    <section id="preguntaEstreno">
+        <div style="text-align: center;">
+            <h3>¿En qué año se estrenó?</h3>
+            <input type="number" id="estreno" class="mb-3">
+            <div class="col-md btn-primary  rounded border border-dark btn-crsr"></div>
+            <p style="display: none;" id="anioEstreno"> Intentos restantes:<span id="cantidadEstreno"></span></p>
+        </div>
+    </section>
+    <div id="wrongYear" style="display: none; text-align: center;">
+        Se acabaron los intentos. Breaking Bad se estrenó en 2008
+    </div> 
+    <div id="correctYear" style="display: none; text-align: center;">
+        ¡Muy bien! En el año 2008.
+    </div>  
+    <section>
+        <div style="display: none;" id="respuesta" class="btn-success rounded p-2"> 
+            hhola        
+        </div>
+    </section>
+
     <section id="contacto" class="container mt-5 mb-3">
         <div class="row p-2 bg-dark">
             <div class="col-md-3 bg-dark">

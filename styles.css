@@ -3,36 +3,42 @@ a {
 }
 
 h1 {
-    text-align: center;
+
     background-color: rgb(126, 150, 126);
-    
     border: cornsilk 1px solid;
     border-radius: 8px;
     color: whitesmoke;
+    text-align: center;
+    font-family: 'Allerta Stencil', sans-serif;
+    padding: 3px;
 }
 
 h2 {
+
     margin-left: 25%;
     text-align: center;
     color: honeydew;
     border: cornsilk 1px solid;
     border-radius: 8px;
     background-color: indigo;
+    font-family: 'Allerta Stencil', sans-serif;
     opacity: 0.9;
     width: 50%;
 }
 
 .recomendadas {
+
     display: flex;
     flex-direction: row;
-    margin-top: 2%;
+    margin-top: 1%;
     align-content: flex-end;
     justify-content: space-around; 
 }
 
 .img-rec {
+
     width: 200px;
-    height: 300px;
+    height: 295px;
     border: ivory 1px solid;
     border-radius: 4px;
     cursor: pointer;
