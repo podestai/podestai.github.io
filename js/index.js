@@ -126,6 +126,7 @@ function correctYear(year) {
     
     if(year == 2008) {
         estreno.style.display = "none";
+        wrongYearAlert.style.display = "none";
         correctYearAlert.className = "alert alert-success";
         correctYearAlert.style.display = "block";
         
@@ -135,6 +136,7 @@ function correctYear(year) {
     
     if(intentosEstreno === 0) {
 
+        correctYearAlert.style.display = "none";
         wrongYearAlert.className = "alert alert-danger";
         wrongYearAlert.style.display = "block";  
         estreno.style.display = "none";
